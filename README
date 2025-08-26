@@ -1,0 +1,32 @@
+# Apache Setup Pro Script
+
+## Overview
+This Bash script automates the installation and configuration of the **Apache HTTP Server** on Debian/Ubuntu-based distributions.  
+It updates the system, installs Apache, configures the firewall (UFW), creates a test HTML page, and logs all actions with timestamps.
+
+---
+
+## Features
+- Updates system packages (`apt update` & `upgrade`)  
+- Installs Apache2  
+- Enables and starts Apache service  
+- Configures UFW firewall for Apache  
+- Creates a test HTML page at `/var/www/html/index.html`  
+- Logs all actions and errors to `$HOME/setup_apache.log` with timestamps  
+- Captures errors in the log automatically  
+
+---
+
+## Requirements
+- Debian/Ubuntu-based system  
+- User with `sudo` privileges  
+- Internet connection to fetch packages  
+
+---
+
+## Usage
+
+1. Make the script executable:
+```bash
+chmod +x setup_apache_pro.sh
+
